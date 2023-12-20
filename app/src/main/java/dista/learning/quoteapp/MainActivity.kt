@@ -18,6 +18,7 @@ import kotlin.text.Typography.quote
 
 class MainActivity : AppCompatActivity() {
     private lateinit var textView:TextView
+    // TODO: Add the recycler View to it
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

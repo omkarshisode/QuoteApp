@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories_array">
+        <item>happiness</item>
+        <item>love</item>
+        <item>famous-quotes</item>
+        <item>history</item>
+        <item>technology</item>
+        <item>civil-rights</item>
+        <!-- Add more categories as needed -->
+    </string-array>
+</resources>

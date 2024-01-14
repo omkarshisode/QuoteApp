@@ -8,16 +8,17 @@
     android:gravity="center">
 
     <Spinner
+        android:id="@+id/categorySpinner"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/categorySpinner"
         android:entries="@array/categories_array"
-        app:layout_constraintBottom_toTopOf="@+id/tvQuote"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278"
+        app:layout_constraintVertical_bias="0.111"
         tools:ignore="HardcodedText" />
 
     <TextView
@@ -56,11 +57,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get Quote"
+        android:background="@drawable/button_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuote"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.744" />
 
 

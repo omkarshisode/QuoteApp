@@ -2,16 +2,12 @@ package dista.learning.quoteapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import kotlin.Result
-import kotlin.text.Typography.quote
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -62,8 +58,8 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<Quote?>, t: Throwable) {
-                quote.text = t.toString()
-                author.text = t.toString()
+                quote.text = "No Internet connection"
+                author.text = "No Internet connection"
             }
         })
     }
